@@ -1,24 +1,17 @@
 body{
-    background-color: white;
+    background-color: blue;
 }
 img{
-    text-align: center;
     width: 100%;
+    height: 25%;
 }
-div li{
+h1, p{
     text-align: center;
-    display: inline;
-    margin-left: 215px;
-    text-transform: uppercase;
 }
-div p{
-    text-align: center;
-    display: inline;
-    margin-left: 0px;
+h1{
+    height: 15px;
+    border: 10px solid #000000;
+    border-radius: 15%;
+    margin: 2%;
+    padding: 10%;
 }
-#centralizar{
-    text-align: center;
-    margin-left: 0px;
-}
-
-
