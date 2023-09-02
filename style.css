@@ -5,3 +5,20 @@ img{
     text-align: center;
     width: 100%;
 }
+div li{
+    text-align: center;
+    display: inline;
+    margin-left: 215px;
+    text-transform: uppercase;
+}
+div p{
+    text-align: center;
+    display: inline;
+    margin-left: 0px;
+}
+#centralizar{
+    text-align: center;
+    margin-left: 0px;
+}
+
+
