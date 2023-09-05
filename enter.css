@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu&family=Roboto+Condensed:wght@700&display=swap');
+
+body{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Phudu', cursive;
+    font-family: 'Roboto Condensed', sans-serif; 
+}
+#logo{
+    width: 150px;
+}
+#container{
+    background-image: url(logo2.png);
+    background-size: cover;
+    height: 700px;
+    padding: 30px;
+}
+.copy{
+    margin-left: 450px;
+    align-items: center;
+    margin-top: 15%;
+}
+.copy form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+}
+#input{
+    background-color: #888888;
+    font-size: medium;
+    height: 50px;
+    width: 400px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+button{
+    background-color: red;
+    color: white;
+    width: 400px;
+    margin-right: 450px;
+    margin-left: 450px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
