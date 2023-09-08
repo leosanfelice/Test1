@@ -1,74 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Phudu&family=Roboto+Condensed:wght@700&display=swap');
-
 body{
-    margin: 0%;
-    font-family: 'Phudu', cursive;
-    font-family: 'Roboto Condensed', sans-serif;
+   margin: 0;
+   background: url(logo.png);
+   background-size: cover;
 }
-#logo{
-    width: 150px;
-}
-#container{
-    background-image: url(logo2.png);
-    background-size: cover;
-    height: 700px;
-    padding: 30px;
-}
-#header{
+.main-page{
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
 }
-select{
-    background-color: black;
+.main-left{
+    margin-top: 20%;
+    margin-left: 40px;
     color: white;
-    padding: 7px 15px;
-    font-size: 16px;
+    font-size: 20px;
 }
-#btn-enter{
-    background-color: red;
-    color: white;
+.btn-main{
     border: none;
-    border-radius: 5px;
-    padding: 7px 15px;
-    font-size: 16px;
-    margin: 5px;
-}
-#btn-enter a{
-    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px;
+    background: rgb(7, 51, 80);
     color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 20px;
 }
-#main{
-    color: white;
-    margin-top: 100px;
+img{
+    width: 50vw;
+    height: 100vh;
     margin-left: 100px;
+    height: 95vh;
 }
-#title-main{
-    font-size: 52px;
-    font-weight: 900;
+.main-left strong{
+    color: yellow;
 }
-h3{
-    font-weight: 10;
-    margin-top: 40px;
-}
-form{
-    display: flex;
-    flex-direction: row;
-}
-#input{
-    height: 50px;
-    width: 400px;
-    background-color: transparent;
-    color: white;
-}
-#btn-start{
-    background-color: red;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin-left: 10px;
-    font-size: 22px;
-    padding: 2px 20px;
-    font-weight: 700;
+@media only screen and (max-width: 700px){
+    .main-page{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .main-right{
+        display: none;
+    }
+    .main-left{
+       margin-right: 30px;
+    }
 }
