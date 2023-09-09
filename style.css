@@ -1,51 +1,50 @@
 body{
-   margin: 0;
-   background: url(logo.png);
-   background-size: cover;
+    margin: 0;   
 }
-.main-page{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main-header{
+    width: 100%;
 }
-.main-left{
-    margin-top: 20%;
-    margin-left: 40px;
-    color: white;
+.mid{
+    width: 100%;
+    height: 50vh;
+    background: rgb(212, 98, 98);
+    text-align: center;
+}
+.mid h1{
+    margin: 0;
+    font-size: 60px;
+    padding-top: 60px;
+    
+}
+.left{
+    width: 50%;
+    height: 50vh;
+    background: yellow;
+    float: left;
+    text-align: center;
     font-size: 20px;
+}
+.left h2{
+    margin-top: 100px;
+}
+.right{
+    width: 50%;
+    height: 50vh;
+    background: red;
+    float: right;
+    text-align: center;
+    font-size: 20px;
+}
+.right h2{
+    margin-top: 100px;
 }
 .btn-main{
     border: none;
-    border-radius: 8px;
-    padding: 10px;
-    background: rgb(7, 51, 80);
+    border-radius: 10px;
+    background: rgb(101, 197, 101);
     color: white;
+    padding: 10px;
+    width: 50%;
     cursor: pointer;
     text-transform: uppercase;
-    font-size: 20px;
-}
-img{
-    width: 50vw;
-    height: 100vh;
-    margin-left: 100px;
-    height: 95vh;
-}
-.main-left strong{
-    color: yellow;
-}
-@media only screen and (max-width: 700px){
-    .main-page{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-    .main-right{
-        display: none;
-    }
-    .main-left{
-       margin-right: 30px;
-    }
 }
