@@ -1,30 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&family=Phudu&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap');
 body{
     margin: 0;
+    background-color: rgb(165, 164, 163);
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Phudu', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
-.main-princ{
+.main{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25vh;
+    font-size: 20px;
 }
-.img-main{
-    width: 100%;
-    height: 100vh;
-}
-.left{
-    margin-top: 15%;
-    margin-left: 200px;
-}
-input{
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 15px;
-    width: 70%;
+strong{
+    color: blue;
 }
 .btn-main{
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
+    background-color: blue;
+    color: white;
     text-transform: uppercase;
-    padding: 10px;
-    font-size: 15px;
     cursor: pointer;
+    padding: 10px;
+}
+.right{
+    background-color: white;
+    width: 35%;
+    height: 35vh;
+    border-radius: 15px;
+}
+li{
+    list-style: none;
+}
+.right h3, li{
+    text-align: center;
+}
+ul{
+    padding: 0;
 }
