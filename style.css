@@ -1,43 +1,47 @@
 body{
     margin: 0;
-    background-color: blueviolet;
 }
 .main{
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    background-color: rgb(77, 77, 76);
+}
+.bottom{
+    height: 100vh;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
 }
-.main, .left .right{
-    margin-top: 30vh;
+.img1{
+    width: 30%;
 }
-h1{
-    color: white;
-    font-size: 40px;
+.avaliacao{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(226, 145, 145);
+    color: yellow;
+    text-transform: uppercase;
 }
-.p1{
-    color: white;
+.fundo{
+    background-color: blueviolet;
 }
-button{
-    border: none;
-    border-radius: 15px;
-    padding: 10px;
+.img2{
+   width: 30%;
+   padding: 20px;
 }
-input{
-    width: 70%;
-    padding: 10px;
-    border: none;
-    outline: none;
-    border-radius: 15px;
+.mid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.btn2{
-    background-color: yellowgreen;
-    width: 70px;
-    cursor: pointer;
+.mid2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.right{
-    background-color: palevioletred;
-    padding: 70px;
-    border-radius: 10px;
+.preco, .desc{
+    background-color: red;
+    text-transform: uppercase;
+    padding: 3px;
 }
