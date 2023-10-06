@@ -27,3 +27,25 @@
 // console.log(n1 === n2);
 // console.log(n1 != n2);
 // console.log(n1 !== n2);
+
+let produtos = ['Arroz', 'Feijao', 'leite'];
+
+var idade = [10, 20, 30, 40];
+
+// adiciona no final!
+produtos.push('trigo', 'cafe');
+
+// remove do final!
+produtos.pop();
+produtos.pop();
+
+// adiciona no inicio!
+produtos.unshift('Uva', 'Banana');
+
+// remove do inicio!
+produtos.shift();
+
+// remove de posiçao especifica
+idade.splice(0,1);
+
+//
