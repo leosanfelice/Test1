@@ -48,4 +48,3 @@ produtos.shift();
 // remove de posiçao especifica
 idade.splice(0,1);
 
-//
