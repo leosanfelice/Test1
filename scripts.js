@@ -1,50 +1,29 @@
-// document.write("Ola mundo");
-// console.log("outro ola mundo");
-// alert("Ola mundo com alert");
+function contar() {
+    var ini = document.getElementById('txti')
+    var fim = document.getElementById('txtf')
+    var passo = document.getElementById('txtp')
+    var res = document.getElementById('res')
 
-// let idade = 14;
-// let altura = 1.79;
-// let peso = 50.5;
-// let mensagem = "aprender js eh dificil";
-
-// document.write("<p> idade " + idade + "</p>");
-// document.write(`altura: ${altura}`);
-// document.write("<p> peso " + peso + "</p>");
-// document.write(`mensagem: ${mensagem}`);
-
-// let n1 = 10;
-// let n2 = 2;
-
-// document.write(`n1 ${n1} <br>`);
-// document.write(`n2 ${n2} <br>`);
-
-// console.log(n1 + n2);
-// console.log(n1 - n2);
-// console.log(n1 * n2);
-// console.log(n1 / n2);
-
-// console.log(n1 == n2);
-// console.log(n1 === n2);
-// console.log(n1 != n2);
-// console.log(n1 !== n2);
-
-let produtos = ['Arroz', 'Feijao', 'leite'];
-
-var idade = [10, 20, 30, 40];
-
-// adiciona no final!
-produtos.push('trigo', 'cafe');
-
-// remove do final!
-produtos.pop();
-produtos.pop();
-
-// adiciona no inicio!
-produtos.unshift('Uva', 'Banana');
-
-// remove do inicio!
-produtos.shift();
-
-// remove de posiçao especifica
-idade.splice(0,1);
-
+    if (ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
+        res.innerHTML = 'Impossivel contar!'
+    } else {
+        res.innerHTML = 'Contando'
+        var i = Number(ini.value)
+        var f = Number(fim.value)
+        var p = Number(passo.value)
+        if(p <= 0 ) {
+           alert('Passo invalido')
+           p = 1
+        }
+        if(i < f) {
+            for(var c = i; c <= f; c += p) {
+                res.innerHTML += `${c} \u{1F449}`
+           }
+        } else {
+            for(var c = i; c >= f; c -= p) {
+                res.innerHTML += `${c} \u{1F449}`
+            }
+        }
+        res.innerHTML += `\u{1F3C1}`
+    }
+}
