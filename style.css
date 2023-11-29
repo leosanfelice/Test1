@@ -13,6 +13,9 @@
     font-size: large;
     
 }
+select#flista {
+    width: 150px;
+}
 .section, h1{
     background-color: aquamarine;
     padding: 50px;

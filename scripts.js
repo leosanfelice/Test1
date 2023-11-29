@@ -1,29 +1,61 @@
-function contar() {
-    var ini = document.getElementById('txti')
-    var fim = document.getElementById('txtf')
-    var passo = document.getElementById('txtp')
-    var res = document.getElementById('res')
+let num = document.querySelector('input#fnum')
+let lista = document.querySelector('select#flista')
+let res = document.querySelector('div#res')
+let valores = []
 
-    if (ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
-        res.innerHTML = 'Impossivel contar!'
+function isNumero(n) {
+    if(Number(n) >= 1 && Number(n) <= 100) {
+        return true
     } else {
-        res.innerHTML = 'Contando'
-        var i = Number(ini.value)
-        var f = Number(fim.value)
-        var p = Number(passo.value)
-        if(p <= 0 ) {
-           alert('Passo invalido')
-           p = 1
-        }
-        if(i < f) {
-            for(var c = i; c <= f; c += p) {
-                res.innerHTML += `${c} \u{1F449}`
-           }
-        } else {
-            for(var c = i; c >= f; c -= p) {
-                res.innerHTML += `${c} \u{1F449}`
-            }
-        }
-        res.innerHTML += `\u{1F3C1}`
+        return false
+    }
+} 
+
+function inLista(n, l) {
+    if(l.indexOf(Number(n)) != -1) {
+        return true
+    } else {
+        return false
+    }
+}
+
+function adicionar() {
+    if(isNumero(num.value) && !inLista(num.value, valores)) {
+        valores.push(Number(num.value))
+        let item = document.createElement('option')
+        item.text = `Valor ${num.value} adicionado.`
+        lista.appendChild(item)
+        res.innerHTML = ''
+    }else {
+        alert('Valor invalido ou ja encontrado na lista!')
+    }
+    num.value = ''
+    num.focus()
+}
+
+function finalizar() {
+    if (valores.length == 0) {
+        alert('Adicione um valor!')
+    } else {
+        let tot = valores.length
+        let maior = valores[0]
+        let menor = valores[0]
+        let soma = 0
+        let media = 0
+        for (let pos in valores) {
+            soma += valores[pos]
+            if (valores[pos] > maior)
+            maior = valores[pos]
+            if (valores[pos] < menor)
+            menor = valores[pos]
+        } 
+        media = soma / tot
+        res.innerHTML = ''
+        res.innerHTML += `<p>Ao todo, temos ${tot} numeros cadastrados </p>`
+        res.innerHTML += `<p>O maior valor informado foi ${maior} </p>`
+        res.innerHTML += `<p>O menor valor informado foi ${menor} </p>`
+        res.innerHTML += `<p>Somando todos os valores, temos ${soma} </p>`
+        res.innerHTML += `<p>A media dos valores digitados é ${media} </p>`
+
     }
 }

@@ -9,26 +9,20 @@
 <body>
     <div class="all">
     <div class="header">
-        <h1>Vamos contar?</h1>
+        <h1>Analisador de numeros</h1>
     </div>
 
     <div class="section">
-        <div id="dados">
-            <label class="lbl" for="">Inicio:</label>
-            <input type="number" name="Inicio" id="txti">
-            <label class="lbl" for="">Fim:</label>
-            <input type="number" name="fim" id="txtf">
-            <label class="lbl" for="">Passo:</label>
-            <input type="number" name="Passo" id="txtp">
-
-            <input type="button" value="contar" onclick="contar()">
+        <div>
+            numero (entre 1 e 100):
+            <input type="number" name="fnum" id="fnum">
+            <input type="button" value="Adicionar" onclick="adicionar()">
+            <br><select name="flista" id="flista" size="6"></select>
+            <input type="button" value="Finalizar" onclick="finalizar()">
         </div>
+       <div id='res'>
 
-        <div id="res">
-            <p>Contando:</p>
-           
-        </div>
-    </div>
+       </div>
 
     <div class="footer">
     </div>
