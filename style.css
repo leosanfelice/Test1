@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 .rodape{
@@ -120,6 +121,10 @@ ul, li{
     color: red;
     cursor: pointer;
     font-size: 20px;
+    transition: transform 0.4s;
+}
+.button-main:hover {
+    transform: scale(1.2);
 }
 .button-main1{
     display: flex;
