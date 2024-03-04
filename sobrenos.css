@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.back-color {
+    background-color: black;
+}
+
+.rodape {
+    width: 85%;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto auto;
+    border: none;
+    border-radius: 7px;
+    background-color: white;
+    color: black;
+}
+
+.text-left {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.right {
+    display: flex;
+    border: none;
+    border-radius: 15px;
+    flex-direction: column;
+    width: 45%;
+    background-color: rgba(255, 68, 0, 0.856);
+    padding: 50px;
+}
+
+.inp-right {
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-input {
+    border: white;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    width: 35%;
+    background-color: rgba(243, 243, 243, 0.466);
+    color: black;
+    font-weight: bolder;
+}
+
+.depoimento {
+    display: block;
+    text-align: center;
+    border-radius: 20px;
+    background-color: white;
+    padding: 70px;
+    margin: 0 7.5%;
+    margin-bottom: 35px;
+    color: orangered;
+}
+
+.depo-p {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.diretoria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.pessoas {
+    margin: 0 3%;
+    text-align: center;
+}
+
+.p-color {
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.img-dire {
+    width: 150px;
+    border-radius: 25px;
+}
+
+.dire {
+    display: block;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#p-dire {
+    color: orangered;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#h1-dire {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(129, 127, 127);
+}
+
+.topicos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.topi {
+    margin: 0 7%;
+    text-align: center;
+}
+
+.h1-topi {
+    color: blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 8px;
+    font-size: 45px;
+}
+
+.p-topi {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.mid {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 7%;
+}
+
+#img-mid {
+    width: 500px;
+}
+
+.p-mid1 {
+    font-size: 35px;
+    margin-bottom: 5px;
+    color: orangered;
+}
+
+.p-mid {
+    font-size: 20px;
+    padding: 7px 0;
+}
+
+#h1-mid {
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mid2 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3%;
+    margin-top: 5%;
+}
+
+#img-mid2 {
+    width: 500px;
+}
+
+.p-mid2 {
+    font-size: 35px;
+    margin-bottom: 5px;
+    color: orangered;
+}
+
+.h1-mid2 {
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.p-somos {
+    font-size: 20px;
+    padding: 7px 0;
+}
+
+.all {
+    background-color: black;
+    padding: 1%
+}
+
+.header {
+    display: flex;
+    margin-left: 12%;
+    margin-bottom: 20%;
+    margin-top: 4%;
+}
+
+#img-header {
+    width: 200px;
+}
+
+.btn-header {
+    display: flex;
+    margin-left: 8%;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.btn-header:hover{
+    color: orangered;
+}
+@media screen and (max-width: 480px) {
+    .header{
+        display: block;
+        width: 50px;
+        margin-left: 3%;
+    }
+    .btn-header{
+        font-size: 15px;
+        padding-left: 2px;
+        margin-top: 5px;
+
+    }
+    .p-mid1{
+        font-size: 3em;
+    }
+    .p-mid2{
+        font-size: 3em;
+    }
+    #img-mid2{
+        display: none;
+    }
+    #img-mid{
+        display: none;
+    }
+    .topicos{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .topi{
+        margin-top: 10%;
+    }
+    .diretoria{
+        display: flex;
+        flex-direction: column;
+    }
+    .pessoas{
+        margin-top: 10%;
+    }
+    .rodape{
+        display: block;
+        height: 100%;
+    }
+    .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15%;
+        width: 68%;
+    }
+    .btn-input{
+        padding-left: 7px;
+    }
+}

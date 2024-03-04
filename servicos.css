@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.back-color {
+    background-color: black;
+}
+
+.rodape {
+    width: 85%;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto auto;
+    border: none;
+    border-radius: 7px;
+    background-color: white;
+    color: black;
+}
+
+.text-left {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.right {
+    display: flex;
+    border: none;
+    border-radius: 15px;
+    flex-direction: column;
+    width: 45%;
+    background-color: rgba(255, 68, 0, 0.856);
+    padding: 50px;
+}
+
+.inp-right {
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-input {
+    border: white;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    width: 35%;
+    background-color: rgba(243, 243, 243, 0.466);
+    color: black;
+    font-weight: bolder;
+}
+
+.solucoes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 6%;
+}
+
+#img-solucoes {
+    width: 400px;
+}
+
+#p-solucoes {
+    color: blueviolet;
+    font-size: 35px;
+}
+
+#h1-desen {
+    color: orangered;
+    font-size: 50px;
+}
+
+.p-desen {
+    padding: 8px 0;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.btn-desen {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-solucoes {
+    padding: 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: orangered;
+    color: white;
+    font-weight: bolder;
+}
+
+#btn-desen {
+    background-color: blueviolet;
+}
+
+.sites {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 8%;
+}
+
+.p-sites {
+    color: blueviolet;
+    font-size: 30px;
+}
+
+.h1-sites {
+    color: orangered;
+    font-size: 55px;
+}
+
+.p-desen {
+    padding: 10px 0;
+}
+
+.desen-foto {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-sites {
+    width: 500px;
+}
+
+.btn-sites {
+    width: 50%;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    justify-content: center;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.button-sites,
+.button-sites2 {
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.color-roxo {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    font-weight: bolder;
+}
+
+.color-orange {
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    font-weight: bolder;
+}
+
+.aplicativo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.apli-foto {
+    display: flex;
+    flex-direction: column;
+}
+
+.sistemas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 7%;
+}
+
+.siste-foto {
+    display: flex;
+    flex-direction: column;
+}
+
+.consultoria {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 6%;
+}
+
+.consu-foto {
+    display: flex;
+    flex-direction: column;
+}
+
+.all {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.back-all {
+    background-color: rgba(14, 12, 12, 0.925);
+    padding: 5%;
+    margin-bottom: 5%;
+}
+
+#h1-all {
+    color: white;
+    font-size: 50px;
+    padding-bottom: 3%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn-all {
+    border: none;
+    border-radius: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 20px;
+    background-color: orangered;
+    color: white;
+}
+
+.header {
+    display: flex;
+    margin-left: 12%;
+    margin-bottom: 20%;
+    margin-top: 4%;
+}
+
+#img-header {
+    width: 200px;
+}
+
+.btn-header {
+    display: flex;
+    margin-left: 8%;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
+}
+
+.btn-header:hover {
+    color: orangered;
+}
+.all-header{
+    background-color: black;
+    padding: 1%;
+}
+@media screen and (max-width: 480px) {
+    .header{
+        display: block;
+        width: 50px;
+        margin-left: 3%;
+    }
+    .btn-header{
+        font-size: 15px;
+        padding-left: 2px;
+        margin-top: 5px;
+
+    }
+    .all{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: auto auto;
+    }
+    .btn-all{
+        margin-top: 5%;
+    }
+    .consu-foto{
+        display: none;
+    }
+    .siste-foto{
+        display: none;
+    }
+    .apli-foto{
+        display: none;
+    }
+    .desen-foto{
+        display: none;
+    }
+    #img-solucoes{
+        display: none;
+    }
+    .rodape{
+        display: block;
+        height: 100%;
+        margin-top: 10%;
+    }
+    .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15%;
+        width: 68%;
+    }
+    .btn-input{
+        padding-left: 7px;
+    }
+}
